@@ -1,0 +1,38 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor del logo */
+.logo {
+  position: relative;
+  width: 150px; /* ajusta según el tamaño que quieras */
+  margin: 10px; /* un poco de espacio desde el borde */
+}
+
+/* Imagen principal dentro del logo */
+.logo .main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Main y footer para ir completando */
+main {
+  padding: 20px;
+  min-height: 400px; /* espacio mínimo, ajusta a tu gusto */
+}
+
+footer {
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
