@@ -1,38 +1,91 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 150px;
+  padding: 0 20px;
+  color: white;
+  position: relative;
   font-family: Arial, sans-serif;
 }
 
-/* Contenedor del logo */
-.logo {
-  position: relative;
-  width: 150px; /* ajusta según el tamaño que quieras */
-  margin: 10px; /* un poco de espacio desde el borde */
+.left-text,
+.right-text {
+  font-weight: bold;
+  font-size: 24px;
+  white-space: nowrap;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Imagen principal dentro del logo */
-.logo .main-image {
-  width: 100%;
-  height: auto;
+.center-image {
+  height: 100%;
+  max-height: 150px;
+  object-fit: contain;
   display: block;
 }
 
-/* Main y footer para ir completando */
-main {
-  padding: 20px;
-  min-height: 400px; /* espacio mínimo, ajusta a tu gusto */
+.menu-categorias {
+  width: 250px;
+  background-color: #1e1e2f;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 20px 0 20px 20px; 
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
-footer {
-  padding: 20px;
-  background-color: #f1f1f1;
+.menu-categorias ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-categorias ul li {
+  border-bottom: 1px solid #2a2a3d;
+}
+
+.menu-categorias ul li.separator {
+  border: none;
+  height: 10px;
+  background: #2a2a3d;
+  margin: 10px 0;
+}
+
+.menu-categorias ul li a {
+  display: flex;
+  align-items: center;
+  color: #ccc;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-categorias ul li a i {
+  margin-right: 15px;
+  min-width: 20px;
   text-align: center;
-  font-size: 14px;
-  color: #333;
+  font-size: 18px;
+}
+
+.menu-categorias ul li a:hover,
+.menu-categorias ul li a.active {
+  background-color: #3b3b5c;
+  color: white;
+}
+
+.menu-categorias ul li a.play-mac {
+  color: #1db954;
+}
+
+.menu-categorias ul li a.play-mac:hover {
+  color: #34c759;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start; 
+  padding-left: 20px; 
 }
