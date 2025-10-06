@@ -5,7 +5,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-
 .header-container {
   display: flex;
   align-items: center;
@@ -93,8 +92,108 @@ body {
   color: #34c759;
 }
 
+.main-title-section {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  background-color: #1e1e1e;
+}
+
+.main-title-section h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.main-title-section p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Estilo para la sección de ACTIVE CODES */
+.active-codes-section {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+}
+
+.active-codes-section h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blue-dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #007acc;
+  border-radius: 50%;
+}
+
+.codes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: start;
+}
+
+.code-card {
+  background-color: #282c34;
+  border: 1px solid #007acc;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 220px;
+  box-shadow: 0 2px 6px rgba(0, 122, 204, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.code-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 122, 204, 0.8);
+}
+
+.code-card strong {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #00aaff;
+  text-align: center;
+}
+
+.code-card p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.code-card em {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #aaa;
+  display: block;
+  text-align: center;
+}
+
+/* Ajustes para menú y contenido lado a lado */
+
 main {
   display: flex;
-  justify-content: flex-start; 
-  padding-left: 20px; 
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.contenido-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
 }
