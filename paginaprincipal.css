@@ -1,23 +1,28 @@
+/* Estilos generales del body */
 body {
   background-color: #0d1b2a;
   color: white;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
 }
 
+/* Estilo para el header */
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: black; 
+  background-color: #111;
   height: auto;
-  padding: 10px 20px;
+  padding: 20px 30px;
   color: white;
   position: relative;
-  font-family: Arial, sans-serif;
-  z-index: 10; 
+  font-family: 'Roboto', Arial, sans-serif;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Estilos para los textos a la izquierda y derecha */
 .left-text,
 .right-text {
   font-weight: bold;
@@ -26,6 +31,7 @@ body {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+/* Imagen centrada */
 .center-image {
   height: 100%;
   max-height: 150px;
@@ -33,15 +39,17 @@ body {
   display: block;
 }
 
+/* Estilo para el menú de categorías */
 .menu-categorias {
   width: 250px;
   background-color: #1e1e2f;
   color: #ccc;
   font-family: Arial, sans-serif;
   padding: 0;
-  margin: 20px 0 20px 20px; 
+  margin: 20px 0 20px 20px;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
 }
 
 .menu-categorias ul {
@@ -68,7 +76,8 @@ body {
   text-decoration: none;
   padding: 12px 20px;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .menu-categorias ul li a i {
@@ -82,6 +91,7 @@ body {
 .menu-categorias ul li a.active {
   background-color: #3b3b5c;
   color: white;
+  transform: translateX(5px);
 }
 
 .menu-categorias ul li a.play-mac {
@@ -92,16 +102,19 @@ body {
   color: #34c759;
 }
 
+/* Estilos para la sección de título principal */
 .main-title-section {
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
   color: white;
   background-color: #1e1e1e;
+  border-bottom: 2px solid #007acc;
 }
 
 .main-title-section h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .main-title-section p {
@@ -109,7 +122,7 @@ body {
   color: #ccc;
 }
 
-/* Estilo para la sección de ACTIVE CODES */
+/* Estilo para la sección de códigos activos */
 .active-codes-section {
   margin: 2rem auto;
   max-width: 1200px;
@@ -126,6 +139,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-weight: 600;
 }
 
 .blue-dot {
@@ -139,14 +153,14 @@ body {
 .codes-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: start;
+  gap: 1.5rem;
+  justify-content: flex-start;
 }
 
 .code-card {
   background-color: #282c34;
   border: 1px solid #007acc;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 1rem;
   width: 220px;
   box-shadow: 0 2px 6px rgba(0, 122, 204, 0.5);
@@ -162,7 +176,7 @@ body {
 .code-card strong {
   display: block;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #00aaff;
   text-align: center;
@@ -183,7 +197,6 @@ body {
 }
 
 /* Ajustes para menú y contenido lado a lado */
-
 main {
   display: flex;
   gap: 20px;
@@ -197,6 +210,8 @@ main {
   gap: 2rem;
   color: white;
 }
+
+/* Estilo para el pie de página */
 .footer {
   background-color: #1e1e2f;
   color: #ccc;
@@ -209,80 +224,67 @@ main {
 
 /* Contenedor del formulario en el header */
 .registration-form-container {
-  width: 300px;
+  width: 320px;
+  background-color: #1e1e2f;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Formulario registro */
+/* Estilos para el formulario de registro */
 .registration-form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   color: white;
 }
 
-/* Inputs */
+/* Estilos para los inputs */
 .registration-form input[type="text"],
 .registration-form input[type="password"] {
-  padding: 6px;
-  border-radius: 4px;
-  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #2a2a3d;
   font-size: 14px;
+  background-color: #2a2a3d;
+  color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Botón */
+.registration-form input[type="text"]:focus,
+.registration-form input[type="password"]:focus {
+  background-color: #1b1f2d;
+  outline: none;
+  border-color: #007acc;
+}
+
+/* Estilo para los botones */
 .registration-form button {
   background-color: #007acc;
   border: none;
-  padding: 6px;
-  border-radius: 4px;
+  padding: 12px 0;
+  border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
   color: white;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .registration-form button:hover {
   background-color: #005fa3;
+  transform: translateY(-3px);
 }
 
-.registration-form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  color: white;
-}
-
-.registration-form input[type="text"],
-.registration-form input[type="password"] {
-  padding: 6px;
-  border-radius: 4px;
-  border: none;
-  font-size: 14px;
-}
-
-/* Contenedor para botones alineados */
-.registration-form button {
-  background-color: #007acc;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  color: white;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-  margin-right: 8px;
-  flex: 1;
-}
-
-/* Contenedor para botones lado a lado */
+/* Contenedor para los botones alineados */
 .registration-form-buttons {
   display: flex;
-  gap: 8px;
+  gap: 12px;
+  justify-content: space-between;
 }
 
-.registration-form button:hover {
-  background-color: #005fa3;
+/* Espaciado entre los botones */
+.registration-form button {
+  flex: 1;
+  min-width: 120px;
 }
-
